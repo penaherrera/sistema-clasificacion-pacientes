@@ -8,10 +8,12 @@ namespace sistema_clasificacion_pacientes
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            // Iniciar con el Login
+            Form2 loginForm = new Form2();
+            Application.Run(loginForm);
         }
     }
 }

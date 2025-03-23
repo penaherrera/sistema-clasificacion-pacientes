@@ -19,7 +19,6 @@ namespace sistema_clasificacion_pacientes
         {
             // Lógica para construir el árbol
             var raiz = new Nodo("Género");
-
             var masculino = new Nodo("Masculino");
             var femenino = new Nodo("Femenino");
             raiz.Hijos.Add(masculino);

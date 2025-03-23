@@ -179,6 +179,12 @@
             PerformLayout();
         }
 
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Cierra la aplicación al cerrar el formulario principal
+            Application.Exit();
+        }
+
         #endregion
 
         private TextBox txtNombre;

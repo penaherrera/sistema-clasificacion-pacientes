@@ -173,7 +173,10 @@ namespace sistema_clasificacion_pacientes
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Form2 loginForm = new Form2();
+            loginForm.Show();
+
+            this.Close();
         }
     }
 }
