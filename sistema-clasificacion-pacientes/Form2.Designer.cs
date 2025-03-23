@@ -50,6 +50,7 @@
             textPassword.Name = "textPassword";
             textPassword.Size = new Size(249, 23);
             textPassword.TabIndex = 1;
+            textPassword.UseSystemPasswordChar = true;
             textPassword.TextChanged += textPassword_TextChanged;
             // 
             // label1
