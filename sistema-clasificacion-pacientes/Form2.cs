@@ -21,12 +21,15 @@ namespace sistema_clasificacion_pacientes
         {
 
         }
-
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
+        private void checkMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            textPassword.UseSystemPasswordChar = !checkMostrar.Checked;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string usuario = textUsername.Text;
