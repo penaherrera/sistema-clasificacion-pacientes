@@ -15,6 +15,13 @@ namespace sistema_clasificacion_pacientes
         public Form2()
         {
             InitializeComponent();
+            {
+                AutoScaleDimensions = new SizeF(7F, 15F);
+                AutoScaleMode = AutoScaleMode.Font;
+                BackgroundImage = Image.FromFile("fondo.jpg"); // ← Agregado
+                BackgroundImageLayout = ImageLayout.Stretch;   // ← Agregado
+                ClientSize = new Size(500, 320);
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)
