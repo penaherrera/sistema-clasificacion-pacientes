@@ -15,18 +15,28 @@ namespace sistema_clasificacion_pacientes
         public Form2()
         {
             InitializeComponent();
+            {
+                AutoScaleDimensions = new SizeF(7F, 15F);
+                AutoScaleMode = AutoScaleMode.Font;
+                BackgroundImage = Image.FromFile("fondo.jpg"); // ← Agregado
+                BackgroundImageLayout = ImageLayout.Stretch;   // ← Agregado
+                ClientSize = new Size(500, 320);
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
         }
-
+        
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
+        private void checkMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            textPassword.UseSystemPasswordChar = !checkMostrar.Checked;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string usuario = textUsername.Text;
